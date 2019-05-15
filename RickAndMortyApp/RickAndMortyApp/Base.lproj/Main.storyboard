@@ -1,11 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ell-hp-OqL">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--Character View Controller-->
+        <scene sceneID="6u1-k5-EyH">
+            <objects>
+                <viewController id="Ell-hp-OqL" customClass="CharacterViewController" customModule="RickAndMortyApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dKi-bu-R2U">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CharacterBackground" translatesAutoresizingMaskIntoConstraints="NO" id="SW4-n3-tUu">
+                                <rect key="frame" x="0.0" y="577" width="414" height="414"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="SW4-n3-tUu" secondAttribute="height" multiplier="1:1" id="KiS-Sb-qKP"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppBackground" translatesAutoresizingMaskIntoConstraints="NO" id="JWQ-1U-Csp">
+                                <rect key="frame" x="0.0" y="10" width="414" height="414"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="JWQ-1U-Csp" secondAttribute="height" multiplier="1:1" id="tpl-8L-Pw6"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kbx-Bl-AKx">
+                                <rect key="frame" x="87" y="328" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="kbx-Bl-AKx" secondAttribute="height" multiplier="1:1" id="gYk-at-b2O"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="4JF-G6-3Dj">
+                                <rect key="frame" x="74.5" y="618" width="265" height="23"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(name)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PSd-XG-VGA">
+                                        <rect key="frame" x="0.0" y="0.0" width="61" height="23"/>
+                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="19"/>
+                                        <color key="textColor" red="0.3564186692237854" green="0.76349395513534546" blue="0.80785471200942993" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(species)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vpm-eK-Ges">
+                                        <rect key="frame" x="91" y="0.0" width="78.5" height="23"/>
+                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="19"/>
+                                        <color key="textColor" red="0.35641866919999998" green="0.76349395509999995" blue="0.80785471200000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(status)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fyP-hz-dMo">
+                                        <rect key="frame" x="199.5" y="0.0" width="65.5" height="23"/>
+                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="19"/>
+                                        <color key="textColor" red="0.35641866919999998" green="0.76349395509999995" blue="0.80785471200000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jg1-63-TYF">
+                                <rect key="frame" x="157" y="708" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="6aE-l7-oLk"/>
+                                    <constraint firstAttribute="width" secondItem="jg1-63-TYF" secondAttribute="height" multiplier="1:1" id="hue-vB-uut"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="MrMeeseeksBox"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="Ell-hp-OqL" eventType="touchUpInside" id="iKL-Xi-gm6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hRh-cd-XTv" firstAttribute="bottom" secondItem="jg1-63-TYF" secondAttribute="bottom" constant="54" id="3SX-v8-qs7"/>
+                            <constraint firstItem="jg1-63-TYF" firstAttribute="centerX" secondItem="dKi-bu-R2U" secondAttribute="centerX" id="7tE-xP-SPb"/>
+                            <constraint firstItem="4JF-G6-3Dj" firstAttribute="centerX" secondItem="dKi-bu-R2U" secondAttribute="centerX" id="9IB-ur-tUe"/>
+                            <constraint firstItem="kbx-Bl-AKx" firstAttribute="centerX" secondItem="dKi-bu-R2U" secondAttribute="centerX" id="Dxc-BL-RuF"/>
+                            <constraint firstItem="JWQ-1U-Csp" firstAttribute="leading" secondItem="hRh-cd-XTv" secondAttribute="leading" id="IWj-aC-YNS"/>
+                            <constraint firstItem="hRh-cd-XTv" firstAttribute="trailing" secondItem="JWQ-1U-Csp" secondAttribute="trailing" id="Pkd-Hz-VIj"/>
+                            <constraint firstAttribute="trailing" secondItem="SW4-n3-tUu" secondAttribute="trailing" id="W5n-MV-nbJ"/>
+                            <constraint firstItem="JWQ-1U-Csp" firstAttribute="top" secondItem="dKi-bu-R2U" secondAttribute="top" constant="10" id="YBC-vT-Gr4"/>
+                            <constraint firstItem="4JF-G6-3Dj" firstAttribute="top" secondItem="kbx-Bl-AKx" secondAttribute="bottom" constant="50" id="dJJ-nQ-wLb"/>
+                            <constraint firstItem="kbx-Bl-AKx" firstAttribute="centerY" secondItem="dKi-bu-R2U" secondAttribute="centerY" id="k7f-uv-1x4"/>
+                            <constraint firstItem="kbx-Bl-AKx" firstAttribute="leading" secondItem="hRh-cd-XTv" secondAttribute="leading" constant="87" id="kEc-Lu-Tf6"/>
+                            <constraint firstItem="SW4-n3-tUu" firstAttribute="leading" secondItem="hRh-cd-XTv" secondAttribute="leading" id="lD0-BE-917"/>
+                            <constraint firstItem="hRh-cd-XTv" firstAttribute="bottom" secondItem="SW4-n3-tUu" secondAttribute="bottom" multiplier="0.87" id="mMk-zP-DwU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hRh-cd-XTv"/>
+                    </view>
+                    <connections>
+                        <outlet property="nameLabel" destination="PSd-XG-VGA" id="py5-34-EKr"/>
+                        <outlet property="speciesLabel" destination="vpm-eK-Ges" id="BQx-R6-zO8"/>
+                        <outlet property="spriteImageView" destination="kbx-Bl-AKx" id="fOA-SM-sJg"/>
+                        <outlet property="statusLabel" destination="fyP-hz-dMo" id="5Nd-im-b2j"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qfw-SU-E75" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="114.49275362318842" y="144.64285714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AppBackground" width="1920" height="1080"/>
+        <image name="CharacterBackground" width="300" height="168"/>
+        <image name="MrMeeseeksBox" width="367" height="384"/>
+    </resources>
 </document>

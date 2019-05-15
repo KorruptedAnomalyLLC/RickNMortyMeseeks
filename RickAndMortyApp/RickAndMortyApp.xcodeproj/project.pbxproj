@@ -11,6 +11,9 @@
 		0C7FA444228C77A500721FD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C7FA442228C77A500721FD1 /* Main.storyboard */; };
 		0C7FA446228C77A500721FD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C7FA445228C77A500721FD1 /* Assets.xcassets */; };
 		0C7FA449228C77A500721FD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C7FA447228C77A500721FD1 /* LaunchScreen.storyboard */; };
+		0C7FA452228C7AD400721FD1 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7FA451228C7AD400721FD1 /* Character.swift */; };
+		0C7FA455228C7CC600721FD1 /* CharacterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7FA454228C7CC600721FD1 /* CharacterController.swift */; };
+		0C7FA458228C7CEF00721FD1 /* CharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7FA457228C7CEF00721FD1 /* CharacterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,9 @@
 		0C7FA445228C77A500721FD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C7FA448228C77A500721FD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C7FA44A228C77A500721FD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C7FA451228C7AD400721FD1 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		0C7FA454228C7CC600721FD1 /* CharacterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterController.swift; sourceTree = "<group>"; };
+		0C7FA457228C7CEF00721FD1 /* CharacterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,9 @@
 			children = (
 				0C7FA450228C77B400721FD1 /* Resources */,
 				0C7FA442228C77A500721FD1 /* Main.storyboard */,
+				0C7FA453228C7AE100721FD1 /* Model */,
+				0C7FA456228C7CCD00721FD1 /* ModelController */,
+				0C7FA459228C7CF500721FD1 /* ViewControllers */,
 			);
 			path = RickAndMortyApp;
 			sourceTree = "<group>";
@@ -67,6 +76,30 @@
 				0C7FA44A228C77A500721FD1 /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		0C7FA453228C7AE100721FD1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0C7FA451228C7AD400721FD1 /* Character.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0C7FA456228C7CCD00721FD1 /* ModelController */ = {
+			isa = PBXGroup;
+			children = (
+				0C7FA454228C7CC600721FD1 /* CharacterController.swift */,
+			);
+			path = ModelController;
+			sourceTree = "<group>";
+		};
+		0C7FA459228C7CF500721FD1 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0C7FA457228C7CEF00721FD1 /* CharacterViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +173,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C7FA458228C7CEF00721FD1 /* CharacterViewController.swift in Sources */,
 				0C7FA43F228C77A500721FD1 /* AppDelegate.swift in Sources */,
+				0C7FA455228C7CC600721FD1 /* CharacterController.swift in Sources */,
+				0C7FA452228C7AD400721FD1 /* Character.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,7 +323,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = RickAndMortyApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/RickAndMortyApp/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +340,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = RickAndMortyApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/RickAndMortyApp/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
