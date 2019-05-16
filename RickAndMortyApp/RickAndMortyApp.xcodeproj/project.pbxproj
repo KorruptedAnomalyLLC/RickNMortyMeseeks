@@ -14,6 +14,11 @@
 		0C7FA452228C7AD400721FD1 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7FA451228C7AD400721FD1 /* Character.swift */; };
 		0C7FA455228C7CC600721FD1 /* CharacterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7FA454228C7CC600721FD1 /* CharacterController.swift */; };
 		0C7FA458228C7CEF00721FD1 /* CharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7FA457228C7CEF00721FD1 /* CharacterViewController.swift */; };
+		0C7FA483228CE4F900721FD1 /* Rick-and-Morty-Theme-Song.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0C7FA482228CE4F800721FD1 /* Rick-and-Morty-Theme-Song.mp3 */; };
+		0C7FA485228CECBD00721FD1 /* pickle_rick.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0C7FA484228CECBD00721FD1 /* pickle_rick.mp3 */; };
+		0C7FA488228CF36B00721FD1 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7FA487228CF36B00721FD1 /* UIButtonExtension.swift */; };
+		0C7FA491228CFEA700721FD1 /* Portal.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0C7FA490228CFEA700721FD1 /* Portal.gif */; };
+		0C7FA493228D002400721FD1 /* GIFLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7FA492228D002400721FD1 /* GIFLauncher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		0C7FA451228C7AD400721FD1 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		0C7FA454228C7CC600721FD1 /* CharacterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterController.swift; sourceTree = "<group>"; };
 		0C7FA457228C7CEF00721FD1 /* CharacterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewController.swift; sourceTree = "<group>"; };
+		0C7FA482228CE4F800721FD1 /* Rick-and-Morty-Theme-Song.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Rick-and-Morty-Theme-Song.mp3"; sourceTree = "<group>"; };
+		0C7FA484228CECBD00721FD1 /* pickle_rick.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pickle_rick.mp3; sourceTree = "<group>"; };
+		0C7FA487228CF36B00721FD1 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		0C7FA490228CFEA700721FD1 /* Portal.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Portal.gif; sourceTree = "<group>"; };
+		0C7FA492228D002400721FD1 /* GIFLauncher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFLauncher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +68,15 @@
 		0C7FA43D228C77A500721FD1 /* RickAndMortyApp */ = {
 			isa = PBXGroup;
 			children = (
+				0C7FA490228CFEA700721FD1 /* Portal.gif */,
+				0C7FA486228CECC400721FD1 /* Audio */,
 				0C7FA450228C77B400721FD1 /* Resources */,
-				0C7FA442228C77A500721FD1 /* Main.storyboard */,
+				0C7FA47A228CC31600721FD1 /* Storyboards */,
 				0C7FA453228C7AE100721FD1 /* Model */,
 				0C7FA456228C7CCD00721FD1 /* ModelController */,
 				0C7FA459228C7CF500721FD1 /* ViewControllers */,
+				0C7FA489228CF37300721FD1 /* ButtonExtension */,
+				0C7FA492228D002400721FD1 /* GIFLauncher.swift */,
 			);
 			path = RickAndMortyApp;
 			sourceTree = "<group>";
@@ -72,7 +86,6 @@
 			children = (
 				0C7FA43E228C77A500721FD1 /* AppDelegate.swift */,
 				0C7FA445228C77A500721FD1 /* Assets.xcassets */,
-				0C7FA447228C77A500721FD1 /* LaunchScreen.storyboard */,
 				0C7FA44A228C77A500721FD1 /* Info.plist */,
 			);
 			path = Resources;
@@ -100,6 +113,32 @@
 				0C7FA457228C7CEF00721FD1 /* CharacterViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0C7FA47A228CC31600721FD1 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				0C7FA447228C77A500721FD1 /* LaunchScreen.storyboard */,
+				0C7FA442228C77A500721FD1 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		0C7FA486228CECC400721FD1 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				0C7FA484228CECBD00721FD1 /* pickle_rick.mp3 */,
+				0C7FA482228CE4F800721FD1 /* Rick-and-Morty-Theme-Song.mp3 */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		0C7FA489228CF37300721FD1 /* ButtonExtension */ = {
+			isa = PBXGroup;
+			children = (
+				0C7FA487228CF36B00721FD1 /* UIButtonExtension.swift */,
+			);
+			path = ButtonExtension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,8 +199,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C7FA485228CECBD00721FD1 /* pickle_rick.mp3 in Resources */,
+				0C7FA483228CE4F900721FD1 /* Rick-and-Morty-Theme-Song.mp3 in Resources */,
 				0C7FA449228C77A500721FD1 /* LaunchScreen.storyboard in Resources */,
 				0C7FA446228C77A500721FD1 /* Assets.xcassets in Resources */,
+				0C7FA491228CFEA700721FD1 /* Portal.gif in Resources */,
 				0C7FA444228C77A500721FD1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -173,7 +215,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C7FA493228D002400721FD1 /* GIFLauncher.swift in Sources */,
 				0C7FA458228C7CEF00721FD1 /* CharacterViewController.swift in Sources */,
+				0C7FA488228CF36B00721FD1 /* UIButtonExtension.swift in Sources */,
 				0C7FA43F228C77A500721FD1 /* AppDelegate.swift in Sources */,
 				0C7FA455228C7CC600721FD1 /* CharacterController.swift in Sources */,
 				0C7FA452228C7AD400721FD1 /* Character.swift in Sources */,
